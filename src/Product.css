@@ -1,0 +1,19 @@
+
+li {
+    list-style-type: none;
+    margin: 1vw
+}
+
+li div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+img {
+    width: 20vw;
+}
+
+h2 {
+    margin-top: 0;
+}

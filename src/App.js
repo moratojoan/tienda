@@ -1,14 +1,7 @@
 import Products from './Products';
 
+import { products } from './data/fake-data';
 
-const products = [
-  {
-      id: "product-1",
-      name: "Product 1",
-      image: "/image.jpg",
-      price: 10
-  }
-];
 
 function App() {
   return (
