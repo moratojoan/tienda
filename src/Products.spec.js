@@ -17,7 +17,9 @@ const products = [
 
 describe("product list", () => {
     it("render list of products", () => {
-        render(<Products products={products} />)
-        expect(screen.getByText("Product 1")).toBeInTheDocument()
-    })
+        render(<Products products={products} />);
+
+        expect(screen.getByText("Product 1")).toBeInTheDocument();
+        expect(screen.getByAltText("Product 1")).toBeInTheDocument();
+    });
 });
