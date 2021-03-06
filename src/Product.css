@@ -1,19 +1,31 @@
 
 li {
     list-style-type: none;
-    margin: 1vw
 }
 
-li div {
+.product-container {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
+
+    border: solid thin lightgrey;
+    margin: 1vw;
+    padding: 0.2rem 0.5rem;
 }
 
-img {
-    width: 20vw;
+.product-image {
+    width: 15vw;
 }
 
-h2 {
+.product-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.product-title {
     margin-top: 0;
+    margin-bottom: 0.3rem;
 }
