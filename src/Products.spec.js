@@ -7,7 +7,11 @@ const products = [
         id: "product-1",
         name: "Product 1",
         image: "/image.jpg",
-        price: 10
+        price: {
+            amount: 10,
+            currency: "EUR",
+            locale: "es-ES"
+        }
     }
 ];
 

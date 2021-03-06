@@ -11,6 +11,7 @@ function Products({products}) {
                     key={id}
                     name={name}
                     image={image}
+                    price={price}
                 />
             ))}
         </ul>
