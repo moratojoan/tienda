@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Products from './Products';
 
 
@@ -17,7 +17,7 @@ const products = [
 
 describe("product list", () => {
     it("render list of products", () => {
-        const container = render(<Products products={products} />)
-        expect(container.getByText("Product 1")).toBeInTheDocument()
+        render(<Products products={products} />)
+        expect(screen.getByText("Product 1")).toBeInTheDocument()
     })
 });
