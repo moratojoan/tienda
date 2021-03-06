@@ -21,5 +21,6 @@ describe("product list", () => {
 
         expect(screen.getByText("Product 1")).toBeInTheDocument();
         expect(screen.getByAltText("Product 1")).toBeInTheDocument();
+        expect(screen.getByText("10", { exact: false })).toBeInTheDocument();
     });
 });
