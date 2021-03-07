@@ -18,7 +18,7 @@ function Product({name, image, price}) {
                 </div>
             </div>
         </li>
-    )
+    );
 }
 
 export default Product;

@@ -8,8 +8,8 @@ describe("price", () => {
             amount: 10,
             currency: "EUR",
             locale: "es-ES"
-        }
-        render(<Price {...price}/>)
+        };
+        render(<Price {...price}/>);
 
         expect(screen.getByText("€", {exact: false})).toBeInTheDocument();
     });
@@ -19,8 +19,8 @@ describe("price", () => {
             amount: 10,
             currency: "USD",
             locale: "en-US"
-        }
-        render(<Price {...price}/>)
+        };
+        render(<Price {...price}/>);
     
         expect(screen.getByText("$", {exact: false})).toBeInTheDocument();
     });
@@ -30,8 +30,8 @@ describe("price", () => {
             amount: 10,
             currency: "GBP",
             locale: "en-GB"
-        }
-        render(<Price {...price}/>)
+        };
+        render(<Price {...price}/>);
     
         expect(screen.getByText("£", {exact: false})).toBeInTheDocument();
     });
